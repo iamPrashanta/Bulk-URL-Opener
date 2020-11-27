@@ -13,16 +13,21 @@ function clearr() {
 }
 
 function openall() {
-
     var removeSpace = textarea.value.replace(/\s/g, '');
-    var brakingString = removeSpace.split(',');
-    var adstURL = "http://";
-    for (var i = 0; i < brakingString.length; i++) {
-        console.log(brakingString[i]);
-        if (brakingString[i].indexOf("http") == -1) {
-            window.open(adstURL.concat(brakingString[i]), '_blank');
-        } else {
-            window.open(brakingString[i], '_blank');
+    var intoobj = removeSpace.split(',');
+    intoobj.forEach(function (link) {
+        if (link.indexOf('.') == -1) {
+            if (link.indexOf('http') == -1) {
+                window.open('http://google.com/search?q=' + link);
+            } else {
+                window.open('http://google.com/search?q=' + link.substr(7));
+            }
         }
-    }
+        else if (link.indexOf('http') == -1) {
+            window.open('http://' + link);
+        }
+        else {
+            window.open(link, '_blank');
+        }
+    })
 }
