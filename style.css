@@ -78,44 +78,60 @@ hr {
     color: rgb(161, 45, 45);
 }
 
-.conq,
-.conab {
+.howtesection,
+.aboutwebsite {
     margin: auto;
     padding: 20px 30px;
 }
 
-.conq {
+.howtesection {
     background-color: #dceff5b4;
     color: black;
 }
 
-.conq p,
-.conab p {
+.howtesection p,
+.aboutwebsite p {
     font-size: 17px;
     line-height: 26px;
     max-width: 950px;
     margin: auto;
 }
 
-.conq li {
+.howtesection li {
     max-width: 950px;
     margin: auto;
     padding-left: 30px;
     line-height: 26px;
 }
 
-.conq h2,
-.conab h2 {
+.howtesection h2,
+.aboutwebsite h2 {
     max-width: 950px;
     margin: auto;
     margin-bottom: 20px;
 }
 
-.conab,
-.conab h2 {
+.aboutwebsite,
+.aboutwebsite h2 {
     color: #525c61;
 }
-
+.howtesection button{
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    color: rgb(8, 113, 155);
+    background-color: #dceff5b4;
+}
+.howtesection #popup_image{
+    position: fixed;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    display: none;
+}
 @media only screen and (max-width: 650px) {
     #pastelinks {
         border: 2px solid skyblue;

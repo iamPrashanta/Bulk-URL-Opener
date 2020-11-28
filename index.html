@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulk URL Opener</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <input type="button" id="openall" value="Open All" onclick="openall()">
         <input type="button" id="clear" value="Clear" onclick="clearr()">
     </div>
-    <div class="conq">
+    <div class="howtesection">
         <h2>How to Open Multiple URL?</h2>
         <p>This tool is very easy to use. First of all, you need to copy the list of all the URLs and paste it inside
             the above blank box. It supports three type of URL format.</p>
@@ -30,11 +30,15 @@
         <li>Space between two URLs</li>
         <li>Each URL in the next/new line</li>
 
-        <p>At last, click on <b>"Open All"</b>. As a result, all the URLs will be open in new tab.</p>
+        <p>At last, click on <b>"Open All"</b>. As a result, all the URLs will be open in new tab.
+            <button onclick="popupImg()">how ?</button></p>
         <p>Most importantly, if you don't enable your browser pop-up then it will show an error. So, please enable it
-            first and then use the tool.</p>
+            first and then use the tool. </p>
+
+        <div id="popup_image"><img src="./popup-gif.gif" alt="permission gif"><button
+                onclick="closePopup()">Close</button></div>
     </div>
-    <div class="conab">
+    <div class="aboutwebsite">
         <h2>About BULK URL Opener</h2>
 
         <p>This is the best and very useful productivity tool. This tool provides the ability to open multiple URLs of
@@ -60,7 +64,8 @@
             Also, we don't even need to get the user's emails and other private details. We only use google analytics to
             analyze and improve user experience.</p>
     </div>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
+    <script src="./websitelist.json"></script>
 </body>
 
 </html>
